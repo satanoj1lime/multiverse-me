@@ -1,78 +1,162 @@
-	<!DOCTYPE html>
-	<html lang="pt_br">
-		<head>
-			<meta charset="utf-8">
-			<title>Me in Another Multiverse</title>
-			<style>
+<!DOCTYPE html>
+<html lang="pt_br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Me in Another Multiverse</title>
+		<style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
+* {
+	box-sizing: border-box;
+}
+
 body {
-	width: 100%;
-	float: left;
 	font-family: 'Space Mono', monospace;
-	background-color: #282A35;
+	margin: 0;
 }
 
-aside {
-	width: 20%;
-	float: right;
-	font-family: 'Space Mono', monospace;
-	background-color: #1B1C1D;
+header {
+	padding: 60px;
+	text-align: center;
+	background: #1B1C1D;
+	color: white;
 }
 
-img {
-	display: block;
-	margin: auto;
+.container {  
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.side {
+	flex: 20%;
+	background-color: #f1f1f1;
+	padding: 20px;
+}
+
+.img {
 	width: 100%;
+	padding: 10px;
 }
-<!--
-pre {
-	font-family: 'Space Mono', monospace;
+
+.friendsimg {
+	clip-path: circle(50% at 50% 50%);
 }
--->
-			</style>
-		</head>
-		<body>
+
+.friendstext {
+	display: flex;             
+	align-items: center; /* Align them to the left */
+	gap: 15px;
+}
+
+.main {
+	flex: 70%;
+	background-color: black;
+	padding: 20px;
+	color: white;
+}
+
+	  @media screen and (max-width: 700px) {
+		  .container, .navbar {   
+			  flex-direction: column;
+		  }
+	  }
+
+	  <!--
+	  aside {
+		  width: 20%;
+		  float: right;
+		  font-family: 'Space Mono', monospace;
+		  background-color: #1B1C1D;
+	  }
+
+
+
+	  pre {
+		  font-family: 'Space Mono', monospace;
+	  }
+	  -->
+		</style>
+	</head>
+	<body>
+		<header>
 			<h1>Jônatas MeowLima Website</h1>
-			<aside>
-			<img src="content/me_cat.jpg" alt="Me as a Cat" style="width:128px;height:128px;">
-			<p>
-Sobre MeowLima:
-Sou MeowLima, um NyanHuman de outro multiverso. Minha vida é codar em Nyan Programming Language e criar coisas como o MeowUnix e o ArpaNyanet. Sou dev, DevOps e até ProPlayer. Meu trabalho? Superar meus amigos sempre!!!
-			</aside>
-			</p>
-			<section>
+		</header>
+		<div class="container">
+			<div class="side">
+				<div class="img">
+					<img src="content/me_cat.jpg" alt="Me as a Cat" style="height:200px;">
+				</div>
+				<h2>Sobre MeowLima:</h2>
+				<h5>MeowLima:</h5>
+				<p>Sou MeowLima, um NyanHuman de outro multiverso. Minha vida é codar em Nyan Programming Language e criar coisas como o MeowUnix e o ArpaNyanet. Sou dev, DevOps e até ProPlayer. Meu trabalho? Superar meus amigos sempre!!!</p>
+			</div>
+			<div class="main">
+				<h2>MeowLima Projetos:</h2>
+				<h5>Alguns dos projetos que desenvolvi</h5>
 				<pre>
-MeowLima Projetos:
 Time NyanMachine	Nyan Programming Language	RubyOnNyanRails
-Turing NyanMachine	NyanSpaceNyanX				MeowUnix
+Turing NyanMachine	NyanSpaceNyanX                  MeowUnix
 ArpaNyanet
 				</pre>
-			</section>
-			<section>
+				<h2>MeowLima Skills Set:</h2>
+				<h5>As minhas melhores skills</h5>
 				<pre>
-MeowLima Melhores Skills:
-
 Dev	        ProPlayer			PromptEngineer
 DevOps		ArchBTW				NyanHuman
 Otaku		HardwareTechnyan
 				</pre>
-			</section>
-			<section>
-				<pre>
-Amigos da pesada de MeowLima:
+				<h2>Amigos da Pesada:</h2>
+				<h5>Os melhores amigos de MeowLima</h5>
 
-Elon MeoMusk
-SamuelNyan Ferreira
-Fabio Meowakita
-DaviNyan Bastos
-AlaNyan Turing
-Linus MeowTorvalds
-Luiz EmmaNyanel
-Judd ViNyanet
-Daniel MeowRobbins
-David HeiNyanemeier Hanssom (aka DHH)
-				</pre>
-			</section>
-		</body>
-	</html>
+				<div class="friendstext">
+					<div class="friendsimg">
+						<img src="content/busi_whitecat.webp" alt="Elon MeoMusk" style="height:150px;">
+					</div>
+					<p>Elon MeoMusk</p>
+				</div>
+
+				<div class="friendstext">
+					<div class="friendsimg">
+						<img src="content/black_cat.webp" alt="SamuelNyan Ferreira" style="height:150px;">
+					</div>
+					<p>SamuelNyan Ferreira</p>
+				</div>
+
+				<div class="friendstext">
+					<div class="friendsimg">
+						<img src="content/cool_cat.png" alt="Fabio Meowakita" style="height:150px;">
+					</div>
+					<p>Fabio Meowakita</p>
+				</div>
+
+				<div class="friendstext">
+					<div class="friendsimg">
+						<img src="content/white_cat.webp" alt="DaviNyan Bastos" style="height:150px;">
+					</div>
+					<p>DaviNyan Bastos</p>
+				</div>
+
+				<div class="friendstext">
+					<div class="friendsimg">
+						<img src="content/sphynx_cat.webp" alt="AlaNyan Turing" style="height:150px;">
+					</div>
+					<p>AlaNyan Turing</p>
+				</div>
+
+				<div class="friendstext">
+					<div class="friendsimg">
+						<img src="content/linus_placeholder.webp" alt="Linus MeowTorvalds" style="height:150px;">
+					</div>
+					<p>Linus MeowTorvalds</p>
+				</div>
+
+				<div class="friendstext">
+					<div class="friendsimg">
+						<img src="content/placeholder_cat.webp" alt="Luiz EmmaNyanel" style="height:150px;">
+					</div>
+					<p>Luiz EmmaNyanel</p>
+				</div>
+			</div> </div>
+	</body>
+</html>
