@@ -3,25 +3,95 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style.css">
 		<title>Me in Another Multiverse</title>
+		<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Space Mono', monospace;
+	margin: 0;
+}
+
+header {
+	padding: 60px;
+	text-align: center;
+	background: #1B1C1D;
+	color: white;
+}
+
+.container {  
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.side {
+	flex: 20%;
+	background-color: #f1f1f1;
+	padding: 20px;
+}
+
+.img {
+	width: 100%;
+	padding: 10px;
+}
+
+.friendsimg {
+	clip-path: circle(50% at 50% 50%);
+}
+
+.friendstext {
+	display: flex;             
+	align-items: center; /* Align them to the left */
+	gap: 15px;
+}
+
+.main {
+	flex: 70%;
+	background-color: black;
+	padding: 20px;
+	color: white;
+}
+
+	  @media screen and (max-width: 700px) {
+		  .container, .navbar {   
+			  flex-direction: column;
+		  }
+	  }
+
+	  <!--
+	  aside {
+		  width: 20%;
+		  float: right;
+		  font-family: 'Space Mono', monospace;
+		  background-color: #1B1C1D;
+	  }
+
+
+
+	  pre {
+		  font-family: 'Space Mono', monospace;
+	  }
+	  -->
+		</style>
+	</head>
+	<body>
 		<header>
 			<h1>Jônatas MeowLima Website</h1>
 		</header>
-
 		<div class="container">
 			<div class="side">
 				<div class="img">
 					<img src="content/me_cat.jpg" alt="Me as a Cat" style="height:200px;">
+				</div>
 				<h2>Sobre MeowLima:</h2>
 				<h5>MeowLima:</h5>
 				<p>Sou MeowLima, um NyanHuman de outro multiverso. Minha vida é codar em Nyan Programming Language e criar coisas como o MeowUnix e o ArpaNyanet. Sou dev, DevOps e até ProPlayer. Meu trabalho? Superar meus amigos sempre!!!</p>
 			</div>
-		</div>
-
 			<div class="main">
-				<div>
 				<h2>MeowLima Projetos:</h2>
 				<h5>Alguns dos projetos que desenvolvi</h5>
 				<pre>
@@ -29,9 +99,6 @@ Time NyanMachine	Nyan Programming Language	RubyOnNyanRails
 Turing NyanMachine	NyanSpaceNyanX                  MeowUnix
 ArpaNyanet
 				</pre>
-				</div>
-
-				<div>
 				<h2>MeowLima Skills Set:</h2>
 				<h5>As minhas melhores skills</h5>
 				<pre>
@@ -39,9 +106,6 @@ Dev	        ProPlayer			PromptEngineer
 DevOps		ArchBTW				NyanHuman
 Otaku		HardwareTechnyan
 				</pre>
-				</div>
-
-				<div>
 				<h2>Amigos da Pesada:</h2>
 				<h5>Os melhores amigos de MeowLima</h5>
 
@@ -93,6 +157,6 @@ Otaku		HardwareTechnyan
 					</div>
 					<p>Luiz EmmaNyanel</p>
 				</div>
-			</div>
+			</div> </div>
 	</body>
 </html>
