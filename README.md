@@ -1,2 +1,9 @@
 # multiverse-me
-Website in pure HTML about me in a humoristic way
+
+Website about me in a humoristic way.
+
+## TODO
+
+- [x] Space Background
+- [ ] Better Person Pics
+- [x] Harmonize colors
